@@ -22,21 +22,17 @@ const Homepage = (()=>{
   }
 
   const hero = () => {
-    const hero = create_div(main, 'hero')
+    const hero = create_div(main, 'hero');
 
-    let left = document.createElement('div');
-    left.className = 'left';
-    hero.appendChild(left);
+    const left = create_div(hero, 'left');
 
     let img = document.createElement("IMG");
     img.src = Photo;
     img.alt = "hero-image";
     left.appendChild(img);
 
-    let right = document.createElement('div');
-    right.className = 'right';
-    hero.appendChild(right);
-    
+    const right = create_div(hero, 'right');
+
     create_h('h1', right, 'A Journey Through Exquisite Flavors');
 
     create_p(right, 'Authentic meditteranian cuisine at our restaurant');
@@ -45,13 +41,9 @@ const Homepage = (()=>{
   }
 
   const work = () => {
-    let work = document.createElement('div');
-    work.className = 'work';
-    main.appendChild(work);
+    const work = create_div(main, 'work');
 
-    let work_hours = document.createElement('div');
-    work_hours.className = 'work-hours';
-    work.appendChild(work_hours);
+    const work_hours = create_div(work, 'work-hours');
 
     create_h('h2', work_hours, 'Opening Hours');
     create_p(work_hours, 'Monday: 7am - 6pm');

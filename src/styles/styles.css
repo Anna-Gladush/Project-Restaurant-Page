@@ -40,6 +40,18 @@ nav {
 .links {
   margin-right: 4vw;
 }
+.audio {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--secondary-color);
+}
+.play {
+  background-image: url(../assets/images/icons/pause.svg);
+}
+.pause {
+  background-image: url(../assets/images/icons/play.svg);
+}
 .links p {
   color: var(--primary-color);
   font-weight: bold;
@@ -68,7 +80,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 10vh;
   background-color: var(--primary-color);
 }
 .hero {
@@ -81,7 +93,7 @@ nav {
   width: 90vw;
 }
 .hero img {
-  height: 65vh;
+  height: 50vh;
   width: auto;
 }
 .right {
@@ -96,12 +108,12 @@ nav {
   font-size: 1.5em;
 }
 .work {
-  height: 70vh;
+  height: 80vh;
 }
 .work-hours {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  margin-top: 5vh;
+  margin-top: 3vh;
   padding: 2em;
   font-size: 2em;
 }
