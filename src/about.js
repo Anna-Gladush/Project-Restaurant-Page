@@ -15,16 +15,16 @@ const About = (()=>{
     createDOM.create_p(half, text2);
   }
   const about = () => {
-    const info = createDOM.create_div(main, 'contact')
+    const info = createDOM.create_div(main, 'contact');
     createDOM.create_h('h1', info, 'Contact Us');
-    createDOM.create_p(info, "We'd be happy to recieve your messages!")
+    createDOM.create_p(info, "We'd be happy to recieve your messages!");
     createDOM.create_img(Photo, 'location-photo', info);    
     const div = createDOM.create_div(info, 'about');
     section(div, Phone, 'phone', 'PHONE', '28310-58250');
     section(div, Email, 'email', 'EMAIL', 'odysseas@gmail.com');
     section(div, Map, 'location', 'LOCATION', 'Xanthoudidu 25, Rethymon, 72178, Greece');
     section(div, Clock, 'clock', 'CLOCK', 'Mon – Wed: 7am – 8pm | Thu – Sun: 8am – 10pm');
-    section()
+
   }
   return {
     about

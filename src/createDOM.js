@@ -8,7 +8,7 @@ const createDOM = (() => {
 
   const create_p = (parent, text) => {
     const p = document.createElement('p');
-    p.textContent = text;
+    p.innerHTML = text;
     parent.appendChild(p);
     return p;
   }

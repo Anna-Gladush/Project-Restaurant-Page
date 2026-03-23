@@ -22,12 +22,9 @@ const Menu = (() => {
     const menuHead = createDOM.create_h('h1', main, 'Our Menu');
     menuHead.className = 'menu-heading';
     createDOM.create_div(main, 'grid');
-    card(Photo, 'Greek Salad', 'salad...', '12.00');
-    card(Photo, 'Greek Salad', 'salad...', '12.00');
-    card(Photo, 'Greek Salad', 'salad...', '12.00');
-    card(Photo, 'Greek Salad', 'salad...', '12.00');
-    card(Photo, 'Greek Salad', 'salad...', '12.00');
-    card(Photo, 'Greek Salad', 'salad...', '12.00');
+    for (let i = 6; i > 0; i--) {
+      card(Photo, 'Greek Salad', 'tomatoes, cucumbers, onion, olives, feta cheese, olive oil and oregano.', '12.00');
+    }
   }
   return {
     menu

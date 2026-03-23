@@ -13,7 +13,7 @@ const Homepage = (()=>{
 
     createDOM.create_h('h1', right, 'A Journey Through Exquisite Flavors');
 
-    createDOM.create_p(right, 'Authentic meditteranian cuisine at our restaurant');
+    createDOM.create_p(right, 'Authentic meditteranian cuisine at our restaurant,');
     createDOM.create_p(right, 'Join us for a delightful evening of great food and music!');
   }
 
@@ -24,13 +24,13 @@ const Homepage = (()=>{
     const work_hours = createDOM.create_div(work, 'work-hours');
 
     createDOM.create_h('h2', work_hours, 'Opening Hours');
-    createDOM.create_p(work_hours, 'Monday: 7am - 8pm');
-    createDOM.create_p(work_hours, 'Tuesday: 7am - 8pm');
-    createDOM.create_p(work_hours, 'Wednesday: 7am - 8pm');
-    createDOM.create_p(work_hours, 'Thursday: 8am - 10pm');
-    createDOM.create_p(work_hours, 'Friday: 8am - 10pm');
-    createDOM.create_p(work_hours, 'Saturday: 8am - 10pm');
-    createDOM.create_p(work_hours, 'Sunday: 8am - 10pm');
+    createDOM.create_p(work_hours, '<span>Monday</span>: 7am - 8pm');
+    createDOM.create_p(work_hours, '<span>Tuesday</span>: 7am - 8pm');
+    createDOM.create_p(work_hours, '<span>Wednesday</span>: 7am - 8pm');
+    createDOM.create_p(work_hours, '<span>Thursday</span>: 8am - 10pm');
+    createDOM.create_p(work_hours, '<span>Friday</span>: 8am - 10pm');
+    createDOM.create_p(work_hours, '<span>Saturday</span>: 8am - 10pm');
+    createDOM.create_p(work_hours, '<span>Sunday</span>: 8am - 10pm');
   }
   const heropage = () => {
     hero();
