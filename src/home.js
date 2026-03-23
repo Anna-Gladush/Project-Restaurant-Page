@@ -1,60 +1,36 @@
-import Photo from './assets/images/johnny-africa-kmeKsyjRCoA-unsplash.jpg'
+import Photo from './assets/images/johnny-africa-kmeKsyjRCoA-unsplash.jpg';
+import { createDOM } from './createDOM.js';
 const Homepage = (()=>{
   const main = document.getElementById('content');
 
-  const create_div = (parent, class_name) => {
-    const div = document.createElement('div');
-    div.className = class_name;
-    parent.appendChild(div);
-    return div;
-  }
-
-  const create_p = (parent, text) => {
-    const p = document.createElement('p');
-    p.textContent = text;
-    parent.appendChild(p);
-    return p;
-  }
-
-  const create_h = (h, parent, text) => {
-    const headline = document.createElement(h);
-    headline.textContent = text;
-    parent.appendChild(headline);
-    return headline;
-  }
-
   const hero = () => {
-    const hero = create_div(main, 'hero');
+    const hero = createDOM.create_div(main, 'hero');
 
-    const left = create_div(hero, 'left');
+    const left = createDOM.create_div(hero, 'left');
+    createDOM.create_img(Photo, "hero-image", left)
 
-    let img = document.createElement("IMG");
-    img.src = Photo;
-    img.alt = "hero-image";
-    left.appendChild(img);
+    const right = createDOM.create_div(hero, 'right');
 
-    const right = create_div(hero, 'right');
+    createDOM.create_h('h1', right, 'A Journey Through Exquisite Flavors');
 
-    create_h('h1', right, 'A Journey Through Exquisite Flavors');
-
-    create_p(right, 'Authentic meditteranian cuisine at our restaurant');
-    create_p(right, 'Join us for a delightful evening of great food and music!');
+    createDOM.create_p(right, 'Authentic meditteranian cuisine at our restaurant');
+    createDOM.create_p(right, 'Join us for a delightful evening of great food and music!');
   }
 
   const work = () => {
-    create_div(main, 'line')
-    const work = create_div(main, 'work');
+    createDOM.create_div(main, 'line')
+    const work = createDOM.create_div(main, 'work');
 
-    const work_hours = create_div(work, 'work-hours');
+    const work_hours = createDOM.create_div(work, 'work-hours');
 
-    create_h('h2', work_hours, 'Opening Hours');
-    create_p(work_hours, 'Monday: 7am - 6pm');
-    create_p(work_hours, 'Tuesday: 7am - 8pm');
-    create_p(work_hours, 'Wednesday: 7am - 8pm');
-    create_p(work_hours, 'Thursday: 7am - 10pm');
-    create_p(work_hours, 'Friday: 7am - 10pm');
-    create_p(work_hours, 'Saturday: 8am - 10pm');
-    create_p(work_hours, 'Sunday: 10am - 10pm');
+    createDOM.create_h('h2', work_hours, 'Opening Hours');
+    createDOM.create_p(work_hours, 'Monday: 7am - 8pm');
+    createDOM.create_p(work_hours, 'Tuesday: 7am - 8pm');
+    createDOM.create_p(work_hours, 'Wednesday: 7am - 8pm');
+    createDOM.create_p(work_hours, 'Thursday: 8am - 10pm');
+    createDOM.create_p(work_hours, 'Friday: 8am - 10pm');
+    createDOM.create_p(work_hours, 'Saturday: 8am - 10pm');
+    createDOM.create_p(work_hours, 'Sunday: 8am - 10pm');
   }
   const heropage = () => {
     hero();
