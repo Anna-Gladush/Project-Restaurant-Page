@@ -7,6 +7,7 @@ export default {
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
+    assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
   devtool: "eval-source-map",
@@ -29,7 +30,7 @@ export default {
         use: ["html-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ogg|mp3|wav)$/i,
         type: "asset/resource",
       },
     ],
