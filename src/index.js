@@ -1,2 +1,3 @@
 import "./styles/styles.css";
-alert("NO!")
+import { Homepage } from "./home.js";
+Homepage.heropage()
