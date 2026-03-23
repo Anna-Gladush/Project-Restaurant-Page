@@ -1,1 +1,2 @@
-alert("Hell no!")
+import "./styles/styles.css";
+alert("NO!")

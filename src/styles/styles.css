@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #1269C7;
+}
+
+@font-face {
+  font-family: Diogenes;
+  src: url(../assets/fonts/DIOGENES.ttf);
+}
+@font-face {
+  font-family: Canela-Light;
+  src: url(../assets/fonts/Canela-Light.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Canela-Light, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+nav,
+.logo,
+.links {
+  display: flex;
+  align-items: center;
+}
+nav {
+  justify-content: space-between;
+}
+.logo {
+  margin-left: 4vw;
+}
+.links {
+  margin-right: 4vw;
+}
+.links p {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-right: 40px;
+}
+.logo p {
+  font-family: Diogenes, sans-serif;
+  font-size: 44px;
+  color: var(--primary-color);
+}
+.logo img {
+  padding-right: 25px;
+  width: 80px;
+  height: 80px;
+}
+
+.pattern {
+  height: 50px;
+  background-image: url("../assets/images/pattern.svg");
+  background-repeat-x: repeat;
+}
