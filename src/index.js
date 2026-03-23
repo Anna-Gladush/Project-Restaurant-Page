@@ -1,36 +1,23 @@
 import "./styles/styles.css";
+import { AudioPlay } from "./audio.js";
 import { Homepage } from "./home.js";
-import myAudioResource from './assets/audio/traditional-greek-music.mp3';
-// import audio from './assets/music/traditional-greek-music.mp3'
-// import audioStop from './assets/images/icons/pause.svg'
+import { Menu } from "./menu.js"
+
+Homepage.heropage();
 const home = document.getElementById('home');
 home.addEventListener('click', () => {
-  Homepage.heropage()
+  clear();
+  Homepage.heropage();
 })
-
-const myAudio = new Audio(myAudioResource);
-myAudio.volume = 0.1;
-myAudio.loop = true;
-myAudio.autoplay = true;
-
-const audioBTN = document.querySelector('.audio-btn');
-audioBTN.addEventListener('click', () => {
-  if (audioBTN.classList.contains('play')){
-    myAudio.pause();
-    audioBTN.classList.remove('play');
-    audioBTN.classList.add('pause');
-  } else if (audioBTN.classList.contains('pause')){
-    myAudio.loop = true;
-    myAudio.play();
-    audioBTN.classList.remove('pause');
-    audioBTN.classList.add('play');
-  }
+const menu = document.getElementById('menu');
+menu.addEventListener('click', () => {
+  clear();
+  Menu.menu();
 })
-//   if (audioDisplay.classList.contains(play)) {
-//     audioDisplay.bac = audioStop;
-//   } else {
-//     audioDisplay.src = audioPlay;
-//   }
-// })
+AudioPlay();
 
+const clear = () => {
+  const main = document.getElementById('content');
+  main.innerHTML = '';
+}
 

@@ -13,12 +13,14 @@ const Homepage = (()=>{
     const p = document.createElement('p');
     p.textContent = text;
     parent.appendChild(p);
+    return p;
   }
 
   const create_h = (h, parent, text) => {
     const headline = document.createElement(h);
     headline.textContent = text;
     parent.appendChild(headline);
+    return headline;
   }
 
   const hero = () => {
@@ -37,10 +39,10 @@ const Homepage = (()=>{
 
     create_p(right, 'Authentic meditteranian cuisine at our restaurant');
     create_p(right, 'Join us for a delightful evening of great food and music!');
-
   }
 
   const work = () => {
+    create_div(main, 'line')
     const work = create_div(main, 'work');
 
     const work_hours = create_div(work, 'work-hours');
