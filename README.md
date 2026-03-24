@@ -11,5 +11,5 @@ photo: location photo by <a href="https://unsplash.com/@mroli3000?utm_source=uns
 music: by <a href="https://pixabay.com/users/ckotty3-25960960/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=165000">Alexander Lisenkov</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=165000">Pixabay</a>
 
 | | Laptop | Mobile |
-| Light |![example-light-laptop](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/light-laptop.png)|![example-light-mobile](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/light-mobile.png)|
-| Dark |![example-dark-laptop](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/dark-laptop.png)|![example-dark-mobile](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/dark-mobile.png)|
+| Light | ![example-light-laptop](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/ligth-laptop.png) | ![example-light-mobile](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/light-mobile.png) |
+| Dark | ![example-dark-laptop](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/dark-laptop.png) | ![example-dark-mobile](https://github.com/Anna-Gladush/Project-Restaurant-Page/blob/main/src/assets/images/overview/dark-mobile.png) |
