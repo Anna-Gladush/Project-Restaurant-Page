@@ -5,17 +5,17 @@ import { Menu } from "./menu.js"
 import { About } from "./about.js"
 
 Homepage.heropage();
-const home = document.getElementById('home');
+const home = document.querySelector('.home');
 home.addEventListener('click', () => {
   clear();
   Homepage.heropage();
 })
-const menu = document.getElementById('menu');
+const menu = document.querySelector('.menu');
 menu.addEventListener('click', () => {
   clear();
   Menu.menu();
 })
-const about = document.getElementById('about');
+const about = document.querySelector('.about');
 about.addEventListener('click', () => {
   clear();
   About.about();
